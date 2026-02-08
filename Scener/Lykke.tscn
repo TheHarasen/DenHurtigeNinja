@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bljnsdd18733x"]
+
+[ext_resource type="Script" uid="uid://b5bdd16t7wcbd" path="res://Scener/Lykke/Ord.gd" id="1_fkxwt"]
+[ext_resource type="Texture2D" uid="uid://cnauhejpwwbb0" path="res://icon.svg" id="2_eq0rx"]
+[ext_resource type="PackedScene" uid="uid://b4kgb5wujjcv6" path="res://GUI/Objekter/markør.tscn" id="3_yd0jl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rbf1w"]
+size = Vector2(125, 125)
+
+[node name="Node2D" type="Node2D" unique_id=1695695518]
+
+[node name="Ord" type="Area2D" parent="." unique_id=1392332458]
+position = Vector2(1019, 627)
+script = ExtResource("1_fkxwt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ord" unique_id=261573564]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_rbf1w")
+
+[node name="Sprite2D" type="Sprite2D" parent="Ord" unique_id=1655278502]
+position = Vector2(0, -1)
+texture = ExtResource("2_eq0rx")
+
+[node name="Markør" parent="." unique_id=1832695914 instance=ExtResource("3_yd0jl")]
+position = Vector2(552, 365)

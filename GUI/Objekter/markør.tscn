@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b4kgb5wujjcv6"]
+
+[ext_resource type="Script" path="res://GUI/Scripts/markør.gd" id="1_hjgya"]
+[ext_resource type="Texture2D" path="res://GUI/Hånd4A.png" id="2_p4hqv"]
+
+[node name="Markør" type="Node2D" unique_id=1832695914]
+script = ExtResource("1_hjgya")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=496949839]
+position = Vector2(0, 21)
+texture = ExtResource("2_p4hqv")
