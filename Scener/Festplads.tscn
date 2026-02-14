@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://ctxigfltj2fif"]
+
+[ext_resource type="PackedScene" uid="uid://cbheftl46jjdh" path="res://GUI/Objekter/tilbage.tscn" id="1_bf3vp"]
+[ext_resource type="Script" uid="uid://s1ltumkhrrql" path="res://Scener/Festplads/Rådhus.gd" id="2_wgj8b"]
+[ext_resource type="Script" uid="uid://cbu4s3cupu0sc" path="res://Scener/Festplads/Lykkekager.gd" id="3_3fqt7"]
+[ext_resource type="Script" uid="uid://c7tthn0tqdywg" path="res://Scener/Festplads/Klatrevæg.gd" id="3_5nage"]
+[ext_resource type="PackedScene" uid="uid://b4kgb5wujjcv6" path="res://GUI/Objekter/markør.tscn" id="3_wum4b"]
+[ext_resource type="Texture2D" uid="uid://lksx6uqj2u6q" path="res://Scener/Common/Pix Skolehjælp.png" id="5_cyeir"]
+
+[node name="Festplads" type="Node2D" unique_id=447605525]
+
+[node name="Rådhus" type="Button" parent="." unique_id=1880283295]
+offset_left = 43.0
+offset_top = 451.0
+offset_right = 353.0
+offset_bottom = 700.0
+text = "< Rådhus"
+script = ExtResource("2_wgj8b")
+
+[node name="Lykkekager" type="Button" parent="." unique_id=909156044]
+offset_left = 415.0
+offset_top = 330.0
+offset_right = 675.0
+offset_bottom = 516.0
+text = "Lykkekager"
+script = ExtResource("3_3fqt7")
+
+[node name="Sushikok" type="Button" parent="." unique_id=1990581467]
+offset_left = 1274.0
+offset_top = 335.0
+offset_right = 1509.0
+offset_bottom = 500.0
+text = "Sushikok"
+
+[node name="Børnenes dag" type="Button" parent="." unique_id=1912265305]
+offset_left = 837.0
+offset_top = 328.0
+offset_right = 1114.0
+offset_bottom = 504.0
+text = "Børnenes dag"
+
+[node name="Klatrevæg" type="Button" parent="." unique_id=583643329]
+offset_left = 1598.0
+offset_top = 413.0
+offset_right = 1906.0
+offset_bottom = 691.0
+text = "Klatrevæg >"
+script = ExtResource("3_5nage")
+
+[node name="PixSkolehjælp" type="Sprite2D" parent="." unique_id=1207131830]
+position = Vector2(1567, 529)
+scale = Vector2(1.9890511, 1.989051)
+texture = ExtResource("5_cyeir")
+
+[node name="Tilbage" parent="." unique_id=1990023429 instance=ExtResource("1_bf3vp")]
+offset_left = 1784.0
+offset_top = 8.0
+offset_right = 1913.0
+offset_bottom = 88.0
+
+[node name="Markør" parent="." unique_id=1832695914 instance=ExtResource("3_wum4b")]
+position = Vector2(1, 1)

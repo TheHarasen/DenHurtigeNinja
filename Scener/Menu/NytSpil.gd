@@ -1,11 +1,15 @@
-extends Node2D
+extends Button
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	global_position = get_global_mouse_position()
+	pass
+
+func _pressed():
+	print("Okay, så starter vi et nyt spil!")
+	get_tree().change_scene_to_file("res://Scener/Intro.tscn")

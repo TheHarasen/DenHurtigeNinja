@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dpmstw2gynjeu"]
+
+[ext_resource type="Script" uid="uid://blm7yniclloqi" path="res://Scener/Rådhusplads/Venstre.gd" id="1_agl7k"]
+[ext_resource type="PackedScene" uid="uid://cbheftl46jjdh" path="res://GUI/Objekter/tilbage.tscn" id="1_vm6cq"]
+[ext_resource type="Script" uid="uid://btjcy1lq7b3bp" path="res://Scener/Rådhusplads/Højre.gd" id="2_rqc54"]
+[ext_resource type="PackedScene" uid="uid://b4kgb5wujjcv6" path="res://GUI/Objekter/markør.tscn" id="3_21023"]
+[ext_resource type="Texture2D" uid="uid://lksx6uqj2u6q" path="res://Scener/Common/Pix Skolehjælp.png" id="5_k7xc4"]
+
+[node name="Rådhusplads" type="Node2D" unique_id=277064648]
+
+[node name="Venstre" type="Button" parent="." unique_id=714022790]
+offset_left = 100.0
+offset_top = 431.0
+offset_right = 446.0
+offset_bottom = 701.0
+text = "< Dojo"
+script = ExtResource("1_agl7k")
+
+[node name="Højre" type="Button" parent="." unique_id=39197967]
+offset_left = 1496.0
+offset_top = 432.0
+offset_right = 1854.0
+offset_bottom = 700.0
+text = "Festplads >"
+script = ExtResource("2_rqc54")
+
+[node name="PixSkolehjælp" type="Sprite2D" parent="." unique_id=1737992011]
+position = Vector2(1237.0001, 507)
+scale = Vector2(1.8284671, 1.8284671)
+texture = ExtResource("5_k7xc4")
+
+[node name="Tilbage" parent="." unique_id=1990023429 instance=ExtResource("1_vm6cq")]
+offset_left = 1784.0
+offset_top = 8.0
+offset_right = 1913.0
+offset_bottom = 88.0
+
+[node name="Markør" parent="." unique_id=1832695914 instance=ExtResource("3_21023")]
+position = Vector2(-2, 3)

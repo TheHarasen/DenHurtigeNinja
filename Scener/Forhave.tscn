@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://b3uhp77ov5amj"]
+
+[ext_resource type="PackedScene" uid="uid://cbheftl46jjdh" path="res://GUI/Objekter/tilbage.tscn" id="1_cv7cl"]
+[ext_resource type="Script" uid="uid://cxnxrqrk5s488" path="res://Scener/Forhave/Indgang.gd" id="1_e668a"]
+[ext_resource type="Script" uid="uid://bctbremuq5i35" path="res://Scener/Forhave/Rådhus.gd" id="2_yaaqc"]
+[ext_resource type="PackedScene" uid="uid://b4kgb5wujjcv6" path="res://GUI/Objekter/markør.tscn" id="3_nvnen"]
+[ext_resource type="Texture2D" uid="uid://lksx6uqj2u6q" path="res://Scener/Common/Pix Skolehjælp.png" id="5_b1tn8"]
+
+[node name="Forhave" type="Node2D" unique_id=757097373]
+
+[node name="Indgang" type="Button" parent="." unique_id=314069282]
+offset_left = 667.0
+offset_top = 270.0
+offset_right = 973.0
+offset_bottom = 498.0
+text = "Dojo"
+script = ExtResource("1_e668a")
+
+[node name="Rådhus" type="Button" parent="." unique_id=1884492515]
+offset_left = 1614.0
+offset_top = 482.0
+offset_right = 1852.0
+offset_bottom = 652.0
+text = "Rådhus >"
+script = ExtResource("2_yaaqc")
+
+[node name="Jujitsu" type="Button" parent="." unique_id=2014644573]
+offset_left = 271.0
+offset_top = 397.0
+offset_right = 534.0
+offset_bottom = 647.0
+text = "Jujitsu"
+
+[node name="Klatrevæg" type="Button" parent="." unique_id=1281453795]
+offset_left = 1109.0
+offset_top = 421.0
+offset_right = 1351.0
+offset_bottom = 650.0
+text = "Klatrevæg"
+
+[node name="PixSkolehjælp" type="Sprite2D" parent="." unique_id=1933369208]
+position = Vector2(220, 555.00006)
+scale = Vector2(1.6240876, 1.6240876)
+texture = ExtResource("5_b1tn8")
+
+[node name="Tilbage" parent="." unique_id=1990023429 instance=ExtResource("1_cv7cl")]
+offset_left = 1784.0
+offset_top = 8.0
+offset_right = 1913.0
+offset_bottom = 88.0
+
+[node name="Markør" parent="." unique_id=1832695914 instance=ExtResource("3_nvnen")]
+position = Vector2(2, 0)

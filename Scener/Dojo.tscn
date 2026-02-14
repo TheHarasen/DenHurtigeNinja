@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://ck268xcbdsvps"]
+
+[ext_resource type="Script" uid="uid://h0u3a5q835kc" path="res://Scener/Dojo/Udgang.gd" id="1_87pwm"]
+[ext_resource type="PackedScene" uid="uid://cbheftl46jjdh" path="res://GUI/Objekter/tilbage.tscn" id="2_3ucs6"]
+[ext_resource type="PackedScene" uid="uid://b4kgb5wujjcv6" path="res://GUI/Objekter/markør.tscn" id="3_gdkjx"]
+[ext_resource type="Texture2D" uid="uid://lksx6uqj2u6q" path="res://Scener/Common/Pix Skolehjælp.png" id="4_t3rsb"]
+
+[node name="Dojo" type="Node2D" unique_id=890376716]
+
+[node name="Senset Tanuki" type="Button" parent="." unique_id=1447205129]
+offset_left = 348.0
+offset_top = 297.0
+offset_right = 584.0
+offset_bottom = 631.0
+text = "Meditationsspil"
+
+[node name="Lillebror" type="Button" parent="." unique_id=2059052158]
+offset_left = 978.0
+offset_top = 413.0
+offset_right = 1234.0
+offset_bottom = 630.0
+text = "Flæk brædder"
+
+[node name="Udgang" type="Button" parent="." unique_id=300052084]
+offset_left = 1690.0
+offset_top = 499.0
+offset_right = 1901.0
+offset_bottom = 775.0
+text = "Udgang"
+script = ExtResource("1_87pwm")
+
+[node name="PixSkolehjælp" type="Sprite2D" parent="." unique_id=138795561]
+position = Vector2(1393, 522)
+scale = Vector2(1.5364964, 1.5364963)
+texture = ExtResource("4_t3rsb")
+
+[node name="Tilbage" parent="." unique_id=1990023429 instance=ExtResource("2_3ucs6")]
+offset_left = 1784.0
+offset_top = 8.0
+offset_right = 1913.0
+offset_bottom = 88.0
+
+[node name="Markør" parent="." unique_id=1832695914 instance=ExtResource("3_gdkjx")]

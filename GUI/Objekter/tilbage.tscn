@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cbheftl46jjdh"]
+
+[ext_resource type="Script" uid="uid://cdgx1cld1167c" path="res://GUI/Scripts/tilbage.gd" id="1_lp1na"]
+
+[node name="Tilbage" type="Button" unique_id=1990023429]
+offset_right = 129.0
+offset_bottom = 80.0
+text = "Tilbage"
+script = ExtResource("1_lp1na")

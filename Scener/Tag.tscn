@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c2gqex1b7nax2"]
+
+[ext_resource type="PackedScene" uid="uid://b4kgb5wujjcv6" path="res://GUI/Objekter/markør.tscn" id="1_e8myi"]
+[ext_resource type="PackedScene" uid="uid://cbheftl46jjdh" path="res://GUI/Objekter/tilbage.tscn" id="2_iwi6h"]
+[ext_resource type="Script" uid="uid://di8b4m1ut46b4" path="res://Scener/Tag/Klatrevæg.gd" id="3_iwi6h"]
+[ext_resource type="Texture2D" uid="uid://lksx6uqj2u6q" path="res://Scener/Common/Pix Skolehjælp.png" id="4_752fa"]
+
+[node name="Tag" type="Node2D" unique_id=596582032]
+
+[node name="Klatrevæg" type="Button" parent="." unique_id=1575453973]
+offset_left = 210.0
+offset_top = 450.0
+offset_right = 554.0
+offset_bottom = 696.0
+text = "v Klatrevæg v"
+script = ExtResource("3_iwi6h")
+
+[node name="Tilbage" parent="." unique_id=1990023429 instance=ExtResource("2_iwi6h")]
+offset_left = 1784.0
+offset_top = 8.0
+offset_right = 1913.0
+offset_bottom = 88.0
+
+[node name="Markør" parent="." unique_id=1832695914 instance=ExtResource("1_e8myi")]
+position = Vector2(-1, 1)
+
+[node name="PixSkolehjælp" type="Sprite2D" parent="." unique_id=200981756]
+position = Vector2(798, 393.00003)
+scale = Vector2(1.4416058, 1.4416058)
+texture = ExtResource("4_752fa")

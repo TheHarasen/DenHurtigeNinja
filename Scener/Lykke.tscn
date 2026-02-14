@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://b5bdd16t7wcbd" path="res://Scener/Lykke/Ord.gd" id="1_fkxwt"]
 [ext_resource type="Texture2D" uid="uid://cnauhejpwwbb0" path="res://icon.svg" id="2_eq0rx"]
 [ext_resource type="PackedScene" uid="uid://b4kgb5wujjcv6" path="res://GUI/Objekter/markør.tscn" id="3_yd0jl"]
+[ext_resource type="PackedScene" uid="uid://cbheftl46jjdh" path="res://GUI/Objekter/tilbage.tscn" id="4_eskd3"]
+[ext_resource type="Texture2D" uid="uid://lksx6uqj2u6q" path="res://Scener/Common/Pix Skolehjælp.png" id="5_7kksa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rbf1w"]
 size = Vector2(125, 125)
@@ -21,5 +23,16 @@ shape = SubResource("RectangleShape2D_rbf1w")
 position = Vector2(0, -1)
 texture = ExtResource("2_eq0rx")
 
+[node name="PixSkolehjælp" type="Sprite2D" parent="." unique_id=1343310398]
+position = Vector2(266, 547)
+scale = Vector2(2.2226276, 2.2226276)
+texture = ExtResource("5_7kksa")
+
+[node name="Tilbage" parent="." unique_id=1990023429 instance=ExtResource("4_eskd3")]
+offset_left = 1784.0
+offset_top = 8.0
+offset_right = 1913.0
+offset_bottom = 88.0
+
 [node name="Markør" parent="." unique_id=1832695914 instance=ExtResource("3_yd0jl")]
-position = Vector2(552, 365)
+position = Vector2(-1, 1)
