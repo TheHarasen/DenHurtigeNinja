@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://dxgva24ume7fy"]
+
+[ext_resource type="Texture2D" uid="uid://lksx6uqj2u6q" path="res://Scener/Common/Pix Skolehjælp.png" id="1_27o3h"]
+[ext_resource type="PackedScene" uid="uid://cbheftl46jjdh" path="res://GUI/Objekter/tilbage.tscn" id="2_0mxj6"]
+[ext_resource type="Script" uid="uid://cmhwasphux5uc" path="res://Scener/Sushikok/SushiSpawn.gd" id="2_h378o"]
+[ext_resource type="PackedScene" uid="uid://b4kgb5wujjcv6" path="res://GUI/Objekter/markør.tscn" id="3_fxkq0"]
+
+[node name="Sushikok" type="Node2D" unique_id=1498480105]
+metadata/_edit_lock_ = true
+
+[node name="PixSkolehjælp" type="Sprite2D" parent="." unique_id=1750978472]
+position = Vector2(153, 651)
+scale = Vector2(1.4416058, 1.4416058)
+texture = ExtResource("1_27o3h")
+
+[node name="Label" type="Label" parent="." unique_id=704917290]
+offset_left = 386.0
+offset_top = 641.0
+offset_right = 421.0
+offset_bottom = 675.0
+text = "Q"
+
+[node name="Label2" type="Label" parent="." unique_id=1465595434]
+offset_left = 590.0
+offset_top = 642.0
+offset_right = 625.0
+offset_bottom = 676.0
+text = "W"
+
+[node name="Label3" type="Label" parent="." unique_id=596678390]
+offset_left = 787.0
+offset_top = 644.0
+offset_right = 822.0
+offset_bottom = 678.0
+text = "E"
+
+[node name="Label4" type="Label" parent="." unique_id=634909979]
+offset_left = 980.0
+offset_top = 645.0
+offset_right = 1015.0
+offset_bottom = 668.0
+text = "R"
+
+[node name="SushiSpawn" type="Node2D" parent="." unique_id=1649686740]
+script = ExtResource("2_h378o")
+
+[node name="Timer" type="Timer" parent="SushiSpawn" unique_id=1578786235]
+
+[node name="Tilbage" parent="." unique_id=1990023429 instance=ExtResource("2_0mxj6")]
+offset_left = 1784.0
+offset_top = 8.0
+offset_right = 1913.0
+offset_bottom = 88.0
+metadata/_edit_lock_ = true
+
+[node name="Markør" parent="." unique_id=1832695914 instance=ExtResource("3_fxkq0")]
+position = Vector2(-1, 1)
+metadata/_edit_lock_ = true

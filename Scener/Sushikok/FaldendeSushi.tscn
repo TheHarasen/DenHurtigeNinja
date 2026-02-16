@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bwfbvlla1lyug"]
+
+[ext_resource type="Texture2D" uid="uid://cnauhejpwwbb0" path="res://icon.svg" id="1_t2cmy"]
+[ext_resource type="Script" uid="uid://78g5eoirjkxu" path="res://Scener/Sushikok/Sushi.gd" id="2_nafng"]
+[ext_resource type="Script" uid="uid://bnufp0dmilm58" path="res://Scener/Sushikok/SushiTrigger.gd" id="3_nafng"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nafng"]
+radius = 63.03174
+
+[node name="Sushi" type="Sprite2D" unique_id=1952484452]
+position = Vector2(0, -64)
+texture = ExtResource("1_t2cmy")
+script = ExtResource("2_nafng")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=144499235]
+script = ExtResource("3_nafng")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1090226673]
+shape = SubResource("CircleShape2D_nafng")

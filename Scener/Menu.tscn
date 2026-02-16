@@ -1,10 +1,19 @@
 [gd_scene format=3 uid="uid://cpsdr86c0oms4"]
 
+[ext_resource type="Texture2D" uid="uid://67jtna6cvljb" path="res://GUI/Sprites/Frø - tile tekstur.png" id="1_pysfd"]
 [ext_resource type="Script" uid="uid://7wkhi0at1xt5" path="res://Scener/Menu/NytSpil.gd" id="1_yxiix"]
 [ext_resource type="Script" uid="uid://bqsemecw14ih8" path="res://Scener/Menu/Afslut.gd" id="2_qtl72"]
 [ext_resource type="PackedScene" uid="uid://b4kgb5wujjcv6" path="res://GUI/Objekter/markør.tscn" id="3_qtl72"]
 
 [node name="Node2D" type="Node2D" unique_id=1267620478]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1147272477]
+offset_right = 1922.0
+offset_bottom = 985.0
+size_flags_horizontal = 3
+texture = ExtResource("1_pysfd")
+stretch_mode = 1
+metadata/_edit_lock_ = true
 
 [node name="NytSpil" type="Button" parent="." unique_id=1612825284]
 offset_left = 746.0
@@ -23,3 +32,4 @@ text = "Afslut"
 script = ExtResource("2_qtl72")
 
 [node name="Markør" parent="." unique_id=1832695914 instance=ExtResource("3_qtl72")]
+metadata/_edit_lock_ = true

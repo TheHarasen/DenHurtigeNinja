@@ -15,6 +15,11 @@ offset_bottom = 696.0
 text = "v Klatrevæg v"
 script = ExtResource("3_iwi6h")
 
+[node name="PixSkolehjælp" type="Sprite2D" parent="." unique_id=200981756]
+position = Vector2(798, 393.00003)
+scale = Vector2(1.4416058, 1.4416058)
+texture = ExtResource("4_752fa")
+
 [node name="Tilbage" parent="." unique_id=1990023429 instance=ExtResource("2_iwi6h")]
 offset_left = 1784.0
 offset_top = 8.0
@@ -23,8 +28,3 @@ offset_bottom = 88.0
 
 [node name="Markør" parent="." unique_id=1832695914 instance=ExtResource("1_e8myi")]
 position = Vector2(-1, 1)
-
-[node name="PixSkolehjælp" type="Sprite2D" parent="." unique_id=200981756]
-position = Vector2(798, 393.00003)
-scale = Vector2(1.4416058, 1.4416058)
-texture = ExtResource("4_752fa")
